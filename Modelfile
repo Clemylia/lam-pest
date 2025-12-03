@@ -2,13 +2,13 @@
 
 # --- 1. Chemin du Fichier GGUF (À adapter) ---
 # Remplacez ceci par le chemin réel de votre fichier GGUF
-FROM hf.co/mradermacher/Poe-GGUF 
+FROM hf.co/Clemylia/learnia-tiny-gguf 
 
 # --- 2. Paramètres de Génération pour l'Inférénce ---
 # Ajustements pour la stabilité (légèrement plus bas pour un modèle from scratch)
 PARAMETER temperature 0.7
 PARAMETER top_p 0.9 
-PARAMETER top_k 40 
+PARAMETER top_k 30 
 PARAMETER num_predict 256
 
 # --- 3. Template de Prompt (CORRECTION CRUCIALE) ---
